@@ -17,3 +17,4 @@ def genres
   genre << @genre unless genre.include?(@genre)
   genre
 end
+end
