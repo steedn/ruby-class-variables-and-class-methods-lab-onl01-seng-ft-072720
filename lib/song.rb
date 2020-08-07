@@ -1,3 +1,5 @@
+require "pry"
+
 class Song
   @@count = 0
   @@genre = []
@@ -16,5 +18,6 @@ class Song
   genre = []
   genre << @genre unless genre.include?(@genre)
   genre
+  binding.pry
 end
 end
