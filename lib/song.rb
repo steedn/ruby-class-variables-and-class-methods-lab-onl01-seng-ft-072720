@@ -2,14 +2,14 @@ require "pry"
 
 class Song
   @@count = 0
-  @@genre = []
+  @@genres = []
   @@artists
 
   attr_accessor :song, :artist, :genre
   def initialize(song, artist, genre)
     @@count += 1
     @genre = genre
-    @@genre << genre
+    @@genres << genre
   end
 
   def self.count
@@ -17,7 +17,7 @@ class Song
   end
 
   def self.genres
-    genre =  @@genre
+    genre =  @@genres
     genre.uniq
   # binding.pry
 end
