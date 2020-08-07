@@ -6,4 +6,6 @@ class Song
     @@song_count += 1
   end
 
-  def
+  def count
+    @@count
+  end
