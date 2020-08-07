@@ -17,9 +17,8 @@ class Song
   end
 
   def self.genres
-  genre = []
-  genre << @genre unless genre.include?(@genre)
-  genre
+    genre =  @@genre
+    genre.uniq
   binding.pry
 end
 end
