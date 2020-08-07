@@ -32,7 +32,7 @@ class Song
   def self.genre_count
 
     hash = {
-      genre_count.group_by{ |v| v}.flat_map |k, v| [k, v.size] |
+      *genre_count.group_by{ |v| v}.flat_map |k, v| [k, v.size] |
     }
     hash
 
