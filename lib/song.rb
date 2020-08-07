@@ -9,11 +9,11 @@ class Song
 
   def initialize(name, artist, genre)
     @@count += 1
-    @genre = genre
+    # @genre = genre
     @@genres << genre
-    @artist = artist
+    # @artist = artist
     @@artists << artist
-    @name = name
+    # @name = name
   end
 
   def self.count
@@ -34,6 +34,6 @@ class Song
   end
 
   def self.artist_count
-      Hash[*@@artists.group_by{ |v| v}.flat_map{ |k, v| [k, v.size] }]
-    end
+    Hash[*@@artists.group_by{ |v| v}.flat_map{ |k, v| [k, v.size] }]
+  end
 end
