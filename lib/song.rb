@@ -37,6 +37,7 @@ class Song
     hash = {
       *@@artists.group_by{ |v| v}.flat_map{ |k, v| [k, v.size] }
     }
+    hash
     # Hash[*@@artists.group_by{ |v| v}.flat_map{ |k, v| [k, v.size] }]
   end
 end
