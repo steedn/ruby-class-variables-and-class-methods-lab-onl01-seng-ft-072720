@@ -8,11 +8,11 @@ class Song
     @@genre << genre
   end
 
-  self.count
+  def self.count
     @@count
   end
 
-self.genres
+  def self.genres
   genre = []
   genre << @genre unless genre.include?(@genre)
   genre
