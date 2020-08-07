@@ -17,8 +17,11 @@ class Song
   end
 
   def self.genres
-    genre =  @@genres
-    genre.uniq
+     @@genres.uniq
   # binding.pry
-end
+  end
+
+  def self.artists
+    artist
+
 end
