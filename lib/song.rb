@@ -28,4 +28,16 @@ class Song
   def self.artists
     @@artists.uniq
   end
+
+  def self.genre_count
+
+    hash = {
+      genre_count.group_by{ |v| v}.flat_map |k, v| [k, v.size] |
+    }
+    hash
+
+    # def self.artist_count
+    #     Hash[*@@artists.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
+    #   end
+    # 
 end
