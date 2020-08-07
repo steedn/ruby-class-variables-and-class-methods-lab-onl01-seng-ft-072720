@@ -20,6 +20,6 @@ class Song
   genre = []
   genre << @genre unless genre.include?(@genre)
   genre
-  # binding.pry
+  binding.pry
 end
 end
